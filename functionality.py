@@ -7,9 +7,9 @@ def floor_collision(player, SCREEN_HEIGHT):
 
 def pipe_collision(player, pipes):
 	for pipe in pipes:
-		# if player.posX + player.radius >= pipe.posX and player.posX - player.radius <= pipe.posX + pipe.width:
-		if player.posY - player.radius >= pipe.posY and player.posY + player.radius <= pipe.posY + pipe.height:
-			print('yes')
+		if player.posX + player.radius >= pipe.posX and player.posX - player.radius <= pipe.posX + pipe.width:
+			if player.posY - player.radius >= pipe.posY and player.posY + player.radius <= pipe.posY + pipe.height:
+				return True
 
 def top_collision(player):
 	if player.posY - player.radius <= 0:

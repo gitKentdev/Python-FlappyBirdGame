@@ -21,7 +21,6 @@ class Bird():
 		else:
 			self.vel += self.gravity
 
-
 		self.posY += self.vel
 
 		self.draw()

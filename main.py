@@ -84,7 +84,7 @@ while is_running:
 		score_rect = score_text.get_rect(center=(SCREEN_WIDTH/2, SCREEN_HEIGHT/2 - 50))
 		screen.blit(score_text, score_rect)
 
-		highscore_text = final_font.render(f'Highscore: {math.floor(score)}', False, (255, 255, 255))
+		highscore_text = final_font.render(f'Highscore: {math.floor(highscore)}', False, (255, 255, 255))
 		highscore_rect = highscore_text.get_rect(center=(SCREEN_WIDTH/2, SCREEN_HEIGHT/2 + 50))
 		screen.blit(highscore_text, highscore_rect)
 
